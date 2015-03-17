@@ -9,25 +9,43 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    <h1>Chicken Broth</h1>
-    <p>A plain base for new web projects</p>
-    <a href="preview.html">Preview</a>
+    <header>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h1>Will it scare me?</h1>
+            <form>
+                <p>I'm afraid of</p>
+                <select>
+                    <option value="spiders">Spiders</option>
+                    <option value="clowns">Clowns</option>
+                    <option value="snakes">Snakes</option>
+                    <option value-"dogs">Dogs</option>
+                    <option value="bees">Bees</option>
+                </select>
+                <p>and I want to watch</p>
+                <input type="text" placeholder="Type a movie title">
+                <button type="submit">Submit</button>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+                <p class="yes-msg">Don't watch it. It will scare you.</p>
+                <p class="no-msg">There are no [scary-thing] in this movie. You're good to go.</p>
 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+                <p>Enter another movie to search again</p>
+            </form>
 
-    <!-- Google Analytics tags would go here -->
+
+            </div><!-- /card -->
+        </div><!-- /content -->
+
+    </div>
+
   </body>
 </html>

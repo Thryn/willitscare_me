@@ -6,6 +6,7 @@
 body {
   font-size: 1em;
   line-height: 1.4;
+  margin: 0;
 }
 
 ::-moz-selection,
@@ -14,5 +15,27 @@ body {
   text-shadow: none;
 }
 
+// quick styles
+header {
+  box-sizing: border-box;
+  background: #0288D1;
+  text-align: center;
+  margin: 0;
+  height: 200px;
+  padding: 2em 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.card {
+  background: white;
+  margin-top: -100px;
+  padding: 4em;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.12)
+
+}
 // import media last so its styles are at the bottom of the compliled css
 @import "media";

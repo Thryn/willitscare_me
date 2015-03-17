@@ -9,6 +9,10 @@ $base-line-height: 24px;
 
 h1 {
   @include adjust-font-size-to(38px);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  // color: white;
 }
 
 h2 {
@@ -29,6 +33,11 @@ h5 {
 
 h6 {
   @include adjust-font-size-to(16px);
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 // Address styling not present in IE 7/8/9, Safari 5, and Chrome.
