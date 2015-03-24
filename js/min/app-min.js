@@ -1,0 +1,1 @@
+var myApp=angular.module("myApp",[]);myApp.controller("myController",["$scope",function(c){c.clicked=!1,c.scary=!1,c.isItScary=function(){c.clicked=!0,c.scary=!c.scary}}]);
