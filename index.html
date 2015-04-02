@@ -20,20 +20,30 @@
             <h1>Will it scare me?</h1>
             <form>
                 <p>I'm afraid of</p>
-                <select ng-model="scaryThing">
-                    <option value="spiders">Spiders</option>
-                    <option value="clowns">Clowns</option>
-                    <option value="snakes">Snakes</option>
-                    <option value-"dogs">Dogs</option>
-                    <option value="bees">Bees</option>
+                <select ng-model="scaryThing" 
+                    ng-model-options="{ updateOn: 'submit' }"
+                    >
+                    <option value="spider">Spiders</option>
+                    <option value="clown">Clowns</option>
+                    <option value="snake">Snakes</option>
+                    <option value-"dog">dog</option>
+                    <option value="bee">Bees</option>
                 </select>
                 <p>and I want to watch</p>
-                <input ng-model="movie" type="text" placeholder="Type a movie title">
-                <button ng-click="isItScary()" type="submit">Submit</button>
+                <input ng-model="requestedMovie" type="text" placeholder="Type a movie title">
+                <button ng-click="lookUpMovie()" type="submit">Submit</button>
  
                 <div ng-show="clicked">
-                <p ng-show="scary" class="yes-msg">Don't watch {{ movie }}. It will scare you.</p>
-                <p ng-hide="scary" class="no-msg">There are no {{ scaryThing }} in {{ movie }}. You're good to go.</p>
+                    <div ng-show="notFound">
+                        <p ng-show="notFound">Movie not found</p>
+                    </div>
+                    <div ng-hide="notFound">
+                        <p ng-show="scary" class="yes-msg">Don't watch <span ng-bind="requestedMovie"></span>. It will scare you.</p>
+                        <p ng-hide="scary" class="no-msg">There are no <span ng-bind="scaryThing"></span> in <span ng-bind="requestedMovie"></span>. You're good to go.</p>
+                    </div>
+
+                    
+                    
                 </div>
             </form>
 
