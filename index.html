@@ -20,9 +20,7 @@
             <h1>Will it scare me?</h1>
             <form>
                 <p>I'm afraid of</p>
-                <select ng-model="scaryThing" 
-                    ng-model-options="{ updateOn: 'submit' }"
-                    >
+                <select ng-model="scaryThing">
                     <option value="spider">Spiders</option>
                     <option value="clown">Clowns</option>
                     <option value="snake">Snakes</option>
@@ -38,8 +36,8 @@
                         <p ng-show="notFound">Movie not found</p>
                     </div>
                     <div ng-hide="notFound">
-                        <p ng-show="scary" class="yes-msg">Don't watch <span ng-bind="requestedMovie"></span>. It will scare you.</p>
-                        <p ng-hide="scary" class="no-msg">There are no <span ng-bind="scaryThing"></span> in <span ng-bind="requestedMovie"></span>. You're good to go.</p>
+                        <p ng-show="scary" class="yes-msg">Don't watch <span class="movieTitle">{{ returnedMovie }}</span>. It will scare you.</p>
+                        <p ng-hide="scary" class="no-msg">There are no {{ returnedKeyword }} in <span class="movieTitle">{{ returnedMovie }}</span>. You're good to go.</p>
                     </div>
 
                     

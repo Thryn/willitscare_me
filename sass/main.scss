@@ -37,5 +37,10 @@ header {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.12)
 
 }
+
+
+.movieTitle {
+  font-weight: 800;
+}
 // import media last so its styles are at the bottom of the compliled css
 @import "media";
